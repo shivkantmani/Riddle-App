@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Alien Riddle</title>
+</head>
+<body>
+    <header>
+        <h1>Alien Riddle</h1>
+    </header>
+    <main>
+        <div class="container">
+            <% if (locals.data) {%>
+            <h3><%= data[0].question %></h3>
+            <br>
+            <br>
+            <div class="answer">
+                <p>Hover Answer</p>
+                <br>
+                <h4><%= data[0].answer %></h4>
+            </div>
+            <% } %>
+        </div>
+    </main>
+    
+</body>
+</html>
